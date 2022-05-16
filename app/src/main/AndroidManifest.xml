@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app_location_voiture">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_Location_Voiture">
+        <activity
+            android:name=".AfficherVehicules"
+            android:exported="false" />
+        <activity
+            android:name=".list_Vehicule"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AfficherVidanges"
+            android:exported="false" />
+        <activity
+            android:name=".list_vidange"
+            android:exported="false"></activity>
+        <activity
+            android:name=".AfficherVisits"
+            android:exported="false" />
+        <activity
+            android:name=".List_VisiteTechnique"
+            android:exported="false" />
+        <activity
+            android:name=".AfficherEntre"
+            android:exported="false" />
+        <activity
+            android:name=".listEntretien"
+            android:exported="false" />
+        <activity
+            android:name=".AjouterVidange"
+            android:exported="false" />
+        <activity
+            android:name=".AjoutVidange"
+            android:exported="false" />
+        <activity
+            android:name=".AjouterEntretien"
+            android:exported="false" />
+        <activity
+            android:name=".AjouterVisiteTechnique"
+            android:exported="false" />
+        <activity
+            android:name=".AjouterVehicule"
+            android:exported="false">
+
+
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

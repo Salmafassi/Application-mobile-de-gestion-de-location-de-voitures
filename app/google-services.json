@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "510176898083",
+    "project_id": "app-location-voiture",
+    "storage_bucket": "app-location-voiture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510176898083:android:f05c63943f439421a75596",
+        "android_client_info": {
+          "package_name": "com.example.app_location_voiture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510176898083-48d3fk7aj5tn2s95t3cgmb7grcsqgvjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYzxKOw8LXheT4dEvFdNm4kOjyJljpYaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510176898083-48d3fk7aj5tn2s95t3cgmb7grcsqgvjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

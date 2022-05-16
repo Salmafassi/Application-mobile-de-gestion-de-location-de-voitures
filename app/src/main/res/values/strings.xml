@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">App_Location_Voiture</string>
+    <array name="etat">
+        <item>Loué</item>
+        <item>Non Loué</item>
+    </array>
+    <array name="vidange">
+        <item>"10000"</item>
+        <item>"20000"</item>
+        <item>"30000"</item>
+        <item>"40000"</item>
+        <item>"50000"</item>
+        <item>"60000"</item>
+    </array>
+</resources>

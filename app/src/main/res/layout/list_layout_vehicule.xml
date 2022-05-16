@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="9dp"
+    android:layout_gravity="fill"
+    android:layout_marginBottom="30dp"
+    android:backgroundTint="@color/white"
+
+    android:layout_marginTop="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:fontFamily="@font/gadamer"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/VehiculeM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/image"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp"
+
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prix/Jour"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/gadamer"
+                />
+                <TextView
+                    android:id="@+id/PrixJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prix/Mois"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gadamer"
+                    />
+
+                <TextView
+                    android:id="@+id/PrixM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="value"
+                    android:textSize="16sp" />
+            </LinearLayout>
+             <ImageView
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+
+                 android:src="@drawable/court"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

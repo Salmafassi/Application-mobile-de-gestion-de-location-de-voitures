@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/lightGrey"
+    android:orientation="vertical"
+    tools:context=".AjouterEntretien">
+    <TextView
+        android:id="@+id/numeroE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/maintenance"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        >
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:text="Matricule"
+            android:padding="3dp"
+            android:textSize="16sp"
+
+            android:src="@drawable/matricul"
+            />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+
+
+            />
+    </LinearLayout>
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/dateEntretien"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Date Entretien"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:inputType="date" />
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Type d'Entretien"
+
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:inputType="text" />
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/montant"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Montant"
+
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_700"
+        android:hint="Enregistrer"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+        />
+</LinearLayout>

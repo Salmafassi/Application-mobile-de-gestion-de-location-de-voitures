@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AjouterVidange">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/resultatv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:paddingBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        >
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:text="Matricule"
+            android:padding="3dp"
+            android:textSize="16sp"
+
+            android:src="@drawable/matricul"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+
+
+            />
+    </LinearLayout>
+    <TextView
+
+        android:id="@+id/dateVidang"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Date de vidange"
+        android:inputType="date"
+        android:textSize="18dp" />
+
+    <EditText
+
+        android:id="@+id/montantV"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Montant"
+        android:inputType="numberDecimal" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        >
+
+
+        <TextView
+
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="KMA"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/lightGrey"
+            android:src="@drawable/matricul"
+            />
+        <TextView
+
+
+            android:id="@+id/kmaV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        >
+
+
+        <TextView
+
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="Vidange"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/lightGrey"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinnerV1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:entries="@array/vidange"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:padding="6dp"
+        >
+
+
+        <TextView
+
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="KMP"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/lightGrey"
+
+            />
+        <TextView
+
+
+            android:id="@+id/kmPV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="kélométrage prochain"
+            android:gravity="center"
+            android:textSize="18dp"
+
+
+            android:ems="10"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/save1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/teal_700"
+            android:hint="update"
+            android:textSize="18dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+            />
+        <Button
+            android:id="@+id/annuler1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="40dp"
+
+            android:background="@drawable/circle"
+            android:backgroundTint="#FFA500"
+            android:textColor="@color/white"
+            android:hint="Annuler"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>
